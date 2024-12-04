@@ -12,7 +12,11 @@
     <div class="container">
         <div class="box">
             <label for="id_type">סוג מטבע</label>
-            <input type="text" name="type" id="id_type">
+            <select name="list" id="list">
+                <option value="ero">יורו 4.2</option>
+                <option value="dolar">דולר 3.9</option>
+                <option value="sterling">לירה סטרלינג 5.0</option>
+            </select>
         </div>
         <div class="box">
             <label for="id_type">כמות (שקלים)</label>
@@ -20,11 +24,11 @@
         </div>
         <div class="box">
             <label for="list">סוגי מטבעות</label>
-            <select name="list" id="list">
-                <option value="ero"> 4.2 יורו</option>
-                <option value="dolar">דולר 3.9</option>
-                <option value="sterling">לירה סטרלינג 5.0</option>
-            </select>
+            <ul>
+                <li>יורו 4.2 *</li>
+                <li>דולר 3.9 *</li>
+                <li>לירה סטרלינג 5.0 *</li>
+            </ul>
         </div>
         <div class="box">
             <button>בצע</button>
