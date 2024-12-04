@@ -1,44 +1,42 @@
 html {
-    font-family: tahoma;
-    direction: rtl;
-   
+  font-family: tahoma;
+  direction: rtl;
 }
-
-
 
 .container {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-content: center;
-    align-items: center;
-    width:600px;
-    gap: 15px;
-    border:5px solid green;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: center;
+  align-items: center;
+  width: 600px;
+  gap: 15px;
+  border: 5px solid green;
 }
 
-.box{
-    
-    background: grey;
-    color:yellow;
-    border:5px solid black;
-    display: flex;
-    flex-direction: column;
-    
+.box {
+  background: grey;
+  color: yellow;
+  border: 5px solid black;
+  display: flex;
+  flex-direction: column;
 }
 
-.box:nth-child(4),.box:nth-child(3) {
-   height: 150px;
-   padding: 10px;
+.box:nth-child(4),
+.box:nth-child(3) {
+  height: 150px;
+  padding: 10px;
 }
 
 button {
-    height: 100%;
-    background-color: yellowgreen;
-    color:#fff;
-    font-size: 2em;
+  height: 100%;
+  background-color: yellowgreen;
+  color: #fff;
+  font-size: 2em;
 }
 
-
-
+label,
+option {
+  font-size: 1em;
+}
 

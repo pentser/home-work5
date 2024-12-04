@@ -11,11 +11,11 @@
 <body>
     <div class="container">
         <div class="box">
-            <label for="id_type">סוג מטבע</label>
-            <select name="list" id="list">
-                <option value="ero">יורו 4.2</option>
-                <option value="dolar">דולר 3.9</option>
-                <option value="sterling">לירה סטרלינג 5.0</option>
+            <label for="id_list">סוג מטבע</label>
+            <select name="list" id="id_list">
+                <option value="uro">יורו</option>
+                <option value="dolar">דולר</option>
+                <option value="sterling">לירה סטרלינג</option>
             </select>
         </div>
         <div class="box">
@@ -23,15 +23,15 @@
             <input type="text" name="type" id="id_type">
         </div>
         <div class="box">
-            <label for="list">סוגי מטבעות</label>
-            <ul>
+            <label for="tableOfRates">סוגי מטבעות</label>
+            <ul id="tableOfRates">
                 <li>יורו 4.2 *</li>
                 <li>דולר 3.9 *</li>
                 <li>לירה סטרלינג 5.0 *</li>
             </ul>
         </div>
         <div class="box">
-            <button>בצע</button>
+            <button id="translate">בצע</button>
         </div>
     </div>
     
