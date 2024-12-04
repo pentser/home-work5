@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="he">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style_us.css">
+    <title>Conversion calculator</title>
+    <script defer src="js/main_us.js"></script>
+    <script defer src="js/functions.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <label for="id_list">Currency type</label>
+            <select name="list" id="id_list">
+                <option value="uro">euro</option>
+                <option value="dolar">dolar</option>
+                <option value="sterling">sterling </option>
+            </select>
+        </div>
+        <div class="box">
+            <label for="id_type">amount (NIS)</label>
+            <input type="number" name="type" id="id_type" value="0" min="0">
+        </div>
+        <div class="box">
+            <label for="tableOfRates">Types of coins</label>
+            <ul id="tableOfRates">
+                <li>euro 4.2 *</li>
+                <li>dolar 3.9 *</li>
+                <li>sterling 5.0 *</li>
+            </ul>
+        </div>
+        <div class="box">
+            <button id="translate">Perform</button>
+        </div>
+    </div>
+    
+</body>
+</html>

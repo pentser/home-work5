@@ -5,18 +5,17 @@ let $translateButton = document.querySelector("#translate");
 $translateButton.addEventListener("click", () => {
   //validation
   if ($textBoxAmount.value === "") {
-    console.error("שדה ריק ,הכנס ערך של שקלים");
-    $textBoxAmount.value=0;
- 
+    console.error("empty field, Enter integer value for NIS amount");
+    $textBoxAmount.value = 0;
   }
 
+  console.log("Heelo:" + $listOfCoins.value);
   if (
     $listOfCoins.value !== "dolar" ||
     $listOfCoins.value !== "uro" ||
     $listOfCoins.value !== "sterling"
   ) {
-    console.error("ערך לא חוקי הכנס דולר|יורו|סטרלינג בלבד");
-    
+    console.error("Invalid value write dolar|uro|");
   }
 
   let dolarRate = 3.9;
@@ -24,10 +23,10 @@ $translateButton.addEventListener("click", () => {
   let sterlingRate = 5.0;
 
   if ($listOfCoins.value === "dolar")
-    alert(parseFloat($textBoxAmount.value) / dolarRate + " דולר");
-  else if ($listOfCoins.value === " יורו")
-    alert(parseFloat($textBoxAmount.value) / uroRate + " יורו");
+    alert(parseFloat($textBoxAmount.value) / dolarRate + " dolar");
+  else if ($listOfCoins.value === "uro")
+    alert(parseFloat($textBoxAmount.value) / uroRate + " euro");
   else {
-    alert(parseFloat($textBoxAmount.value) / sterlingRate + " סטרלינג");
+    alert(parseFloat($textBoxAmount.value) / sterlingRate + " sterling");
   }
 });
