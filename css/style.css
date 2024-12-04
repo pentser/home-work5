@@ -8,16 +8,15 @@ html {
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: center;
-  align-items: center;
   width: 600px;
   gap: 15px;
-  border: 5px solid green;
+  /* border: 5px solid green; */
 }
 
 .box {
   background: grey;
   color: yellow;
-  border: 5px solid black;
+  /* border: 5px solid black; */
   display: flex;
   flex-direction: column;
 }
